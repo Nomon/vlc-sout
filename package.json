@@ -1,5 +1,5 @@
 {
-  "name": "vlc-transcode",
+  "name": "vlc-sout",
   "version": "0.0.1",
   "description": "JSON format for vlc sout interface",
   "main": "index.js",
