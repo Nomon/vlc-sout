@@ -10,7 +10,7 @@ exports.stringify = function(obj) {
           s += ",";
         }
       });
-      if(Object.keys(node).length == 1) {
+      if(Object.keys(node).length == 1 && typeof node[Object.keys(node)[0]] == "object") {
         this.before(function() {
           var key = Object.keys(node)[0];
           s += key;
