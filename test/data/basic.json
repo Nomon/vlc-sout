@@ -14,9 +14,8 @@
         "crf":24,
         "vbv-bufsize":7000,
         "vbv-maxrate":2100,
-        "x264-ssim":"",
-        "no-bpyramid":"",
-        "x264-tune":"animation"
+        "no-bpyramid":"1",
+        "tune":"animation"
       }
     },
     "fps":30,

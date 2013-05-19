@@ -11,9 +11,10 @@ options.push('dummy');
 options.push('-vvvv')
 options.push(argv._[0]);
 options.push('vlc://quit');
-
-options.push('--video-filter=rotate --rotate-angle=180');
-options.push('--video-filter=transform --transform-type=vflip');
+options.push("--sout-transcode-vfilter");
+options.push('transform{vflip}');
+options.push("--transform-type");
+options.push("vflip");
 options.push("--sout");
 options.push(sout.stringify(require('./test/data/basic.json')))
 
