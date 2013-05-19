@@ -26,7 +26,7 @@ exports.stringify = function(obj) {
       });
       this.pre(function(x, key) {
         to_s(key);
-        if(x != "") {
+        if(x != "" && this.level >= 1) {
           s += "=";
         }
       });
